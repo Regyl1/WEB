@@ -5,15 +5,119 @@
         <meta name="keywords" content="personal site, Roman Bazylevich">
         <meta name="description" content="personal site for web">
         <link rel = "stylesheet" href ="CSS/outlines.css">
-        <title>Bazylevich Roman M33031</title>
+        <title>Базылевич Роман M33031</title>
+
+        <style>
+            aside {
+             background: #f0f0f0;
+             width: 400px;
+             float: right;
+            }
+            article {
+             margin-right: 240px;
+             display: block;
+            }
+           </style>
     </head>
 
-    <header>
-
-    </header>
-    
     <body>
-        
+        <header>
+            <h2>
+                Роман Базылевич
+            </h2>
+            <nav>
+                <a href=/achivments/>Достижения</a>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+            <aside>
+                <h3>Кусок моего кода</h3>
+                <article>
+                    Это пример моего кода, который я использовал до этого   
+                </article>
+                <pre><code>
+def GoldenRatio(a, b, eps):
+ans = [(a, b)]
+phi = (np.sqrt(5)-1)/2
+x1 = a + (b - a)*(1 - phi)
+x2 = a + (b - a)*phi
+f1 = Oracle(x1)
+f2 = Oracle(x2)
+while (abs(b - a) >= eps):
+    if (f1 <= f2):
+        b = x2
+        x2 = x1
+        f2 = f1
+        x1 = a + (b - a)*(1 - phi)
+        f1 = (Oracle(x1))
+    else:
+        a = x1
+        x1 = x2
+            f1 = f2
+        x2 = a + (b - a)*phi
+        f2 = (Oracle(x2))
+        pair = (a, b)
+        ans.append(pair)
+return ans
+                </code></pre>
+            </aside>
+            
+            <section>
+                <h3>Языки программирования, которые использую:</h3>
+                <ul>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+            </section>
+
+            <aside>
+                <section>
+                <h3>ASCII-art</h3>
+                <pre>
+   /\_/\
+   >^.^<.---.
+  _'-`-'     )\
+ (6--\ |--\ (`.`-.
+     --'  --'  ``-
+                </pre>
+                </section>
+                <section>
+                    <h3>Случайная цитата
+                    </h3>
+                <blockquote>Первое условие бессмертия — смерть</blockquote>
+                <cite>Станислав Ежи Лец</cite>
+                </section>
+            </aside>
+        </article>
+            <article>
+                <h3>
+                    Обо мне
+                </h3>
+                <p>
+                    Родился 28 августа 2001 года в Орше, Беларусь. Большую часть жизни там и прожил.
+                </p>
+                <p>
+                    Занимаюсь программированием на протяжении около
+                    <strong>8 лет</strong>.
+                </p>
+                <p>
+                    На данный момент учусь на 3 курсе в университете ИТМО.
+                </p>
+            </article>
+        </main>
+
+        <footer>
+            <h2>
+                Связь:
+            </h2>
+            <p>
+            <a href=https://github.com/Regyl1>GITHUB</a>|
+            <a href=https://vk.com/id181862768>vk</a>
+            </p>
+            ©2021
+        </footer>
     </body>
 </html>
-
