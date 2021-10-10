@@ -6,6 +6,7 @@ h1, h2, h3{
 }
 h1{
     font-size: 24;
+    text-align: center;
 }
 h2{
     font-size: 22;
@@ -17,22 +18,31 @@ h3{
 }
 
 aside{
-    background-size: 100%;
-    font-size: 16px;
     border: solid 3px #466069;
     background-color: #B8E0EC;
-    box-shadow:10px 5px 5px #656869
+    box-shadow:10px 5px 5px #656869;
+    background-size: 100%;
+    font-size: 16px;
 }
 
-.section_in_aside{
+.section_in_aside{ 
     background-size: 100%;
     border: solid 3px #466069;
     background-color: #B8E0EC;
     box-shadow:10px 5px 5px #656869;
 }
 
+.color_and_underline_in_a_box{
+    background-color: #B8E0EC;
+    border: solid 3px #466069;
+    box-shadow:10px 5px 5px #656869;
+    text-decoration: underline;
+    color: #466069;
+}
+
 code{
     font-family:Hack;
+    font-weight: 550;
 }
 ul{
     list-style: none;
@@ -48,11 +58,17 @@ blockquote{
 
 cite{
     border: solid 3px #466069;
+    margin-left: 10px;
+}
+
+a{
+    font-size: 16px;
 }
 
 p{
+    margin-left: 10px;
     padding-left: 30px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: normal;
-    font-
+    text-align: left;
 }
