@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="keywords" content="personal site, Roman Bazylevich">
         <meta name="description" content="personal site for web">
-        <link rel = "stylesheet" href ="CSS/outlines.css">
+        <link rel = "stylesheet" href ="CSS/StyleTable.css">
         <title>Базылевич Роман M33031</title>
     </head>
 
@@ -20,13 +20,35 @@
 
         <main>
             <article>
+                <h3>
+                    Обо мне
+                </h3>
+                <p>
+                    Родился 28 августа 2001 года в Орше, Беларусь. Большую часть жизни там и прожил.
+                </p>
+                <p>
+                    Занимаюсь программированием на протяжении около
+                    <strong>8 лет</strong>.
+                </p>
+                <p>
+                    На данный момент учусь на 3 курсе в университете ИТМО.
+                </p>
+            </article>
+            <article>
+                <h3>Языки программирования, которые использую:</h3>
+                <ul>
+                    <li><img src="Resources/C++Logo.png" width="15" height="17">C++</li>
+                    <li><img src="Resources/PythonLogo.png" width="16" height="16">Python</li>
+                    <li><img src="Resources/JavaLogo.png" width="15" height="27">Java</li>
+                </ul>
+            </article>
             <aside>
+            <article>
                 <h3>Кусок моего кода</h3>
-                <article>
+                <section>
                     Это пример моего кода, который я использовал до этого   
-                </article>
-                <pre><code>
-def GoldenRatio(a, b, eps):
+                </section>
+                <pre><code>def GoldenRatio(a, b, eps):
 ans = [(a, b)]
 phi = (np.sqrt(5)-1)/2
 x1 = a + (b - a)*(1 - phi)
@@ -48,53 +70,27 @@ while (abs(b - a) >= eps):
         f2 = (Oracle(x2))
         pair = (a, b)
         ans.append(pair)
-return ans
-                </code></pre>
+return ans </code></pre>
             </aside>
-            
-            <section>
-                <h3>Языки программирования, которые использую:</h3>
-                <ul>
-                    <li>C++</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                </ul>
+            </article>    
+        <article>
+            <section class="section_in_aside">
+            <h3>ASCII-art</h3>
+            <pre>
+    /\_/\
+    >^.^<.---.
+    _'-`-'     )\
+    (6--\ |--\ (`.`-.
+        --'  --'  ``- </pre>
             </section>
-
-            <aside>
-                <section>
-                <h3>ASCII-art</h3>
-                <pre>
-   /\_/\
-   >^.^<.---.
-  _'-`-'     )\
- (6--\ |--\ (`.`-.
-     --'  --'  ``-
-                </pre>
-                </section>
-                <section>
-                    <h3>Случайная цитата
-                    </h3>
+            <section class="section_in_aside" >
+                <h3>Случайная цитата</h3>
                 <blockquote>Первое условие бессмертия — смерть</blockquote>
                 <cite>Станислав Ежи Лец</cite>
                 </section>
-            </aside>
-        </article>
-            <article>
-                <h2>
-                    Обо мне
-                </h2>
-                <p>
-                    Родился 28 августа 2001 года в Орше, Беларусь. Большую часть жизни там и прожил.
-                </p>
-                <p>
-                    Занимаюсь программированием на протяжении около
-                    <b>8 лет</b>.
-                </p>
-                <p>
-                    На данный момент учусь на 3 курсе в университете ИТМО.
-                </p>
             </article>
+        </aside>
+            
         </main>
 
         <footer>
@@ -102,8 +98,8 @@ return ans
                 Связь:
             </h2>
             <p>
-            <a href=https://github.com/Regyl1>GITHUB</a>|
-            <a href=https://vk.com/id181862768>vk</a>
+            <a href=https://github.com/Regyl1><img src="Resources/GitHubLogo.png" width="32" height="32"></a>
+            <a href=https://vk.com/id181862768><img src="Resources/VkLogo.png" width="32" height="32"></a>
             </p>
             ©2021
         </footer>
