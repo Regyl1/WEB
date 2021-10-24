@@ -1,54 +1,92 @@
-<!DOCKTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
     <head>
         <meta charset="utf-8">
         <meta name="keywords" content="personal site, Roman Bazylevich">
         <meta name="description" content="personal site for web">
-        <link rel = "stylesheet" href ="CSS/StyleTable.css">
+        <link rel = "stylesheet" href ="CSS/styles.css">
         <title>Базылевич Роман M33031</title>
     </head>
 
     <body>
-        <header>
-            <h1>
+        <header class = "header">
+            <h1 class = "header-name">
                 Роман Базылевич
             </h1>
             <nav>
-                <a href=/achivments/  class="color_and_underline_in_a_box">Достижения</a>
+                <a href=/achivments/  class="main-achievements" id="block">Достижения</a>
             </nav>
         </header>
-
-        <main>
+        <main class = "main">
+        <section class = "main-info" id="block">
             <article>
-                <h3>
-                    Обо мне
-                </h3>
-                <p>
-                    Родился 28 августа 2001 года в Орше, Беларусь. Большую часть жизни там и прожил.
-                </p>
-                <p>
-                    Занимаюсь программированием на протяжении около
-                    <strong>8 лет</strong>.
-                </p>
-                <p>
-                    На данный момент учусь на 3 курсе в университете ИТМО.
-                </p>
+                <h3 class = "main-h">Обо мне</h3>
+                <p class = "main__text">Родился 28 августа 2001 года в Орше, Беларусь. Большую часть жизни там и прожил.</p>
+                <p class = "main__text">Занимаюсь программированием на протяжении около <strong>8 лет</strong>.</p>
+                <p class = "main__text">На данный момент учусь на 3 курсе в университете ИТМО.</p>
             </article>
+
             <article>
-                <h3>Языки программирования, которые использую:</h3>
-                <ul>
-                    <li><img src="Resources/C++Logo.png" width="15" height="17">C++</li>
-                    <li><img src="Resources/PythonLogo.png" width="16" height="16">Python</li>
-                    <li><img src="Resources/JavaLogo.png" width="15" height="27">Java</li>
+                <h3 class = "main-h">Языки программирования, которые использую:</h3>
+                <ul  id = "nonestyle">
+                    <li><img class = "main-info-list__image" src="Resources/C++Logo.png">C++</li>
+                    <li><img class = "main-info-list__image" src="Resources/PythonLogo.png">Python</li>
+                    <li><img class = "main-info-list__image"  src="Resources/JavaLogo.png">Java</li>
                 </ul>
             </article>
-            <aside>
             <article>
-                <h3>Кусок моего кода</h3>
-                <section>
+                <h3 class = "main-h">Таблица:</h3>
+                <table class = "main-table">
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <aside class="main-aside_left" id="block">
+            <section>
+            <h3 class = "main-h">ASCII-art</h3>
+            <pre class = "main-aside_left__pre">
+    /\_/\
+    >^.^<.---.
+    _'-`-'     )\
+    (6--\ |--\ (`.`-.
+        --'  --'  ``- </pre>
+            </section>
+            <section>
+                <h3 class = "main-h">Случайная цитата</h3>
+                <blockquote class = "main-blockquote">Первое условие бессмертия — смерть</blockquote>
+                <cite>Станислав Ежи Лец</cite>
+            </section>
+            <section>
+                <h3 class = "main-h">Картинка</h3>
+                <img class = "main-aside-left__img"src="Resources/mountains.jpg">
+                
+            </section>
+        </aside>
+
+
+        <aside class="main-aside_right" id="block">
+            <article>
+                <h3 class = "main-h">Кусок моего кода</h3>
+                <section class = "main__text">
                     Это пример моего кода, который я использовал до этого   
                 </section>
-                <pre><code>def GoldenRatio(a, b, eps):
+                <pre><code class="main-aside-right__code">def GoldenRatio(a, b, eps):
 ans = [(a, b)]
 phi = (np.sqrt(5)-1)/2
 x1 = a + (b - a)*(1 - phi)
@@ -71,37 +109,20 @@ while (abs(b - a) >= eps):
         pair = (a, b)
         ans.append(pair)
 return ans </code></pre>
-            </aside>
-            </article>    
-        <article>
-            <section class="section_in_aside">
-            <h3>ASCII-art</h3>
-            <pre>
-    /\_/\
-    >^.^<.---.
-    _'-`-'     )\
-    (6--\ |--\ (`.`-.
-        --'  --'  ``- </pre>
-            </section>
-            <section class="section_in_aside" >
-                <h3>Случайная цитата</h3>
-                <blockquote>Первое условие бессмертия — смерть</blockquote>
-                <cite>Станислав Ежи Лец</cite>
-                </section>
-            </article>
         </aside>
-            
         </main>
-
-        <footer>
-            <h2>
-                Связь:
-            </h2>
-            <p>
-            <a href=https://github.com/Regyl1><img src="Resources/GitHubLogo.png" width="32" height="32"></a>
-            <a href=https://vk.com/id181862768><img src="Resources/VkLogo.png" width="32" height="32"></a>
-            </p>
-            ©2021
+        <footer class = "footer">
+            <ul class = "footer-list" id = "nonestyle">
+                <li class = "footer-list__item">
+                    <a href=https://github.com/Regyl1><img class ="footer-list__item__img" src="Resources/GitHubLogo.png"></a>
+                </li>
+                <li class = "footer-list__item">
+                    <a href=https://vk.com/id181862768><img class ="footer-list__item__img" src="Resources/VkLogo.png" ></a>
+                </li>
+            </ul>
+            <div class = "footer-copyright">
+                ©2021 Regyl.inc
+            </div>
         </footer>
     </body>
 </html>
