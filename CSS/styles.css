@@ -5,10 +5,12 @@ body{
 
 .main{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .main__text{
     line-height:25px;
+    text-align:center;
 }
 
 .main-achievements{
@@ -58,9 +60,34 @@ table{
     border: 1px solid;
 }
 
-.main-info-list__image{
-    height: 30px;
+.main-info-list{
+    display: flex;
+    height: 40px;
+}
 
+.main-info-list__text{
+    font-size: 18px;
+    margin: 11px 0px;
+    padding: 0 0 0 4px;
+}
+
+.main-info-list__image{
+    margin: 4px 0px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+#img1{
+    padding: 0px 2px
+}
+
+#img2{
+    padding: 0px 0.25px;
+}
+
+#img3{
+    padding: 0px 7px
 }
 
 .main-aside_left__pre,
@@ -81,7 +108,7 @@ table{
 
 @media (min-width: 952px){
     .main-info{
-        width: 50%;
+        width: 40%;
     }
     .main-aside_left{
         width: 25%;
@@ -93,13 +120,13 @@ table{
 
 @media (max-width: 951px){
     .main-aside_left{
-        width: 50%;
+        width: 100%;
     }
     .main-aside_right{
         display: none;
     }
     .main-info{
-        width: 50%;
+        width: 100%;
     }
 }
 
@@ -137,7 +164,7 @@ table{
 }
 
 #nonestyle{
-    list-style: none;;
+    list-style: none;
 }
 
 #block{
