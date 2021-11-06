@@ -16,7 +16,7 @@ body{
 
 .main-h{
     text-align:center;
-    font-size: 18px;
+    font-size: 14pt
 }
 
 .main-list__item{
@@ -29,7 +29,7 @@ body{
 }
 
 .main-info-list__text{
-    font-size: 18px;
+    font-size: 11pt;
     margin: 11px 0px;
     padding: 0 0 0 4px;
 }
@@ -187,12 +187,6 @@ table{
     background-color:#8b8b8b;
 }
 
-.main-achievements{
-    text-decoration: line-through;
-    font-size: 16px;
-    color:#808080;
-    background-color:#BFBFBF;
-}
 
 .block{
     padding: 5px 5px 5px;
