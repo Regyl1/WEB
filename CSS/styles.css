@@ -49,7 +49,7 @@ tr:nth-child(odd){
     background-color: #BFBFBF;
 }
 
-td {
+.td {
     border: 1px solid;
     padding: 10px;
     text-align: center;
@@ -199,4 +199,72 @@ table{
 .active{
     color:black;
     font-weight:bold;
+}
+
+.main-todo-list-table{
+    text-align: center;
+}
+
+.main-todo-list{
+    text-align: center;
+}
+
+.ad{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-todo{
+    margin-left:auto; 
+    margin-right:auto; 
+}
+
+.main-todo-table{
+    margin-right:auto;
+    margin-left:auto;
+    border: solid 0px;
+}
+
+.main-todo-table-tbody__tr{
+    padding: 0px;
+    border: solid 2px #404040;
+}
+
+
+.main-todo-table-tbody__del-button-img{
+    margin: 0;
+    padding: 0;
+    height: 20px;
+}
+
+.main-todo-table-tbody__td{
+    padding: 0px 3px;
+    height: 20px;
+    border: solid 1px;
+}
+
+.main-todo__add_button{
+    margin-right:auto;
+    margin-left:auto;
+    text-align: center;
+}
+
+.main-insert_menu{
+    display: flex;
+}
+
+.load-time{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding: auto;
+}
+
+.delete-btn{
+    margin-left: 2px;
+    margin-top: 0px;
 }

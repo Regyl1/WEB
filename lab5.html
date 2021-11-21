@@ -7,6 +7,13 @@
         <title>Базылевич Роман M33031</title>
         <script src="JS/loadTimeScript.js"></script>
         <script src="JS/script1.js"></script>
+
+        <script src="JS/listenDeleteTodo.js"></script>
+        <script src="JS/onSubmitFunc.js"></script>
+        <script src="JS/saveInfo.js"></script>
+        <script src="JS/clearAll.js"></script>
+        <script src="JS/load.js"></script>
+        
     </head>    
 
     <body>
@@ -21,7 +28,36 @@
                 <a href="lab5.html"  class="header-nav__elements block">Лаб. 5</a>
             </nav>
         </header>
-    
+        
+        <main class="main block" >
+            <article class ="main-todo block">
+                <h3 class="main-h">Todo list:</h3>
+                
+
+                <div class="main-insert_menu">
+                    <form  name="search" onsubmit="onSubmitFunc();return false;">
+                        <input class="main-todo__add_button" type="text" minlength=1 maxlength=50 size=50 name="key" placeholder="Введите значение"></input>
+                        
+                    </form>
+                    <form onsubmit="saveInfo();return false;">
+                        <input type="submit" value="save" />
+                    </form>
+
+                    <form onsubmit="loadInfo();return false;">
+                        <input type="submit" value="load" />
+                    </form>
+
+                    <form onsubmit="clearAll();return false;">
+                        <input type="submit" value="clear" />
+                    </form>
+                </div>
+                
+                <table class="main-todo-table">
+                        <tbody class="main-todo-table-tbody" id="tbody-lab6"><tbody>
+                </table>
+            </article>
+        </main>
+
         <footer class="footer block">
             <ul class="footer-list nonestyle">
                 <li class="footer-list__item">
