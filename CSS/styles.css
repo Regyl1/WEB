@@ -256,7 +256,8 @@ table{
 }
 
 .load-time{
-    position: absolute;
+    position: fixed;
+    background-color: #E1E6E8;
     display: flex;
     text-align: center;
     margin-left: 0px;
