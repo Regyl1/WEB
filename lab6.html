@@ -8,7 +8,8 @@
         <script src="JS/loadTimeScript.js"></script>
         <script src="JS/script1.js"></script>
 
-        <script src="JS/lab5Scripts.js"></script>        
+        <script src="JS/lab6Scripts.js"></script>
+     
     </head>    
 
     <body>
@@ -28,33 +29,22 @@
         <main class="main block" >
             <article class ="main-todo block">
                 <h3 class="main-h">Todo list:</h3>
-                
-
-                <div class="main-insert_menu">
-                    <form  name="search" onsubmit="onSubmitFunc();return false;">
-                        <input class="main-todo__add_button" type="text" minlength=1 maxlength=50 name="key" placeholder="Введите значение"></input>
-                    
-                        <input type="button" value="save" onclick="saveInfo();"/>
-                        <input type="button" value="load" onclick="loadInfo();"/>
-                        <input type="button" value="clear" onclick="clearAll();"/>
-                    </form>
+                <div class="preloader">
+                    <img src="Resources/preloader.gif">
                 </div>
-                
-                <table class="main-todo-table">
-                        <tbody class="main-todo-table-tbody" id="tbody-lab5">
-                            <template id="main-todo-table-tbody__tmpl">
-                                <tr class="main-todo-table-tbody__tr">
-                                    <td class="main-todo-table-tbody__td">
-                                    </td>
-                                    <td class="main-todo-table-tbody__td-button">
-                                        <button class="main-todo-table-tbody__del-button" onclick="deleteTr(this)">
-                                            <img class="main-todo-table-tbody__del-button-img" src="Resources/TrashIcon.png"/>
-                                        </button>
-                                    </td>
-                                </tr>
-                            </template>
+                <table class="main-todo-table hide">
+                        <tbody class="main-todo-table-tbody" id="tbody-lab6">
+                            <tr class="main-todo-table-tbody__tr">
+                            <td class="main-todo-table-tbody__td">userID</td>
+                            <td class="main-todo-table-tbody__td">id</td>
+                            <td class="main-todo-table-tbody__td">title</td>
+                            <td class="main-todo-table-tbody__td">completed</td>
+                            </tr>
                         </tbody>
                 </table>
+                <div class="warning block hide">
+                    ⚠ Что-то пошло не так!
+                </div>
             </article>
         </main>
 

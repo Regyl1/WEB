@@ -6,12 +6,8 @@ function saveChanges(){
     for(let i = 0; i < size; i++){
         tdInfo[i] = array[i]['innerText'];
     }
-    console.log(tdInfo);
     localStorage.setItem('tdInfo', JSON.stringify(tdInfo)); 
-    console.log(localStorage);
 }
-
-
 
 window.addEventListener('load',() => {
     var tdInfo = JSON.parse(localStorage.getItem('tdInfo'));
@@ -23,7 +19,7 @@ window.addEventListener('load',() => {
         var clone = tmpElem.content.cloneNode(true);
         clone.querySelectorAll("td")[0].textContent = val;
 
-        var printBlock = document.getElementById("tbody-lab6");
+        var printBlock = document.getElementById("tbody-lab5");
         printBlock.appendChild(clone);
     }
     saveChanges()
@@ -40,7 +36,7 @@ function onSubmitFunc(){
         var clone = tmpElem.content.cloneNode(true);
         clone.querySelectorAll("td")[0].textContent = val;
 
-        var printBlock = document.getElementById("tbody-lab6");
+        var printBlock = document.getElementById("tbody-lab5");
         printBlock.appendChild(clone);
     }
     saveChanges();
@@ -74,7 +70,7 @@ function loadInfo(){
             var clone = tmpElem.content.cloneNode(true);
             clone.querySelectorAll("td")[0].textContent = val;
 
-            var printBlock = document.getElementById("tbody-lab6");
+            var printBlock = document.getElementById("tbody-lab5");
             printBlock.appendChild(clone);
         }
     }else{

@@ -273,3 +273,12 @@ table{
 .main-todo-table-tbody__td-button{
     padding: 0px;
 }
+
+.hide{
+    display: none;
+}
+
+.warning{
+    font-size: 14pt;
+    font-weight:bold;
+}
