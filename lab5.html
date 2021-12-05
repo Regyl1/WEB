@@ -8,12 +8,7 @@
         <script src="JS/loadTimeScript.js"></script>
         <script src="JS/script1.js"></script>
 
-        <script src="JS/listenDeleteTodo.js"></script>
-        <script src="JS/onSubmitFunc.js"></script>
-        <script src="JS/saveInfo.js"></script>
-        <script src="JS/clearAll.js"></script>
-        <script src="JS/load.js"></script>
-        
+        <script src="JS/lab5Scripts.js"></script>        
     </head>    
 
     <body>
@@ -36,24 +31,28 @@
 
                 <div class="main-insert_menu">
                     <form  name="search" onsubmit="onSubmitFunc();return false;">
-                        <input class="main-todo__add_button" type="text" minlength=1 maxlength=50 size=50 name="key" placeholder="Введите значение"></input>
-                        
-                    </form>
-                    <form onsubmit="saveInfo();return false;">
-                        <input type="submit" value="save" />
-                    </form>
-
-                    <form onsubmit="loadInfo();return false;">
-                        <input type="submit" value="load" />
-                    </form>
-
-                    <form onsubmit="clearAll();return false;">
-                        <input type="submit" value="clear" />
+                        <input class="main-todo__add_button" type="text" minlength=1 maxlength=50 name="key" placeholder="Введите значение"></input>
+                    
+                        <input type="button" value="save" onclick="saveInfo();"/>
+                        <input type="button" value="load" onclick="loadInfo();"/>
+                        <input type="button" value="clear" onclick="clearAll();"/>
                     </form>
                 </div>
                 
                 <table class="main-todo-table">
-                        <tbody class="main-todo-table-tbody" id="tbody-lab6"><tbody>
+                        <tbody class="main-todo-table-tbody" id="tbody-lab6">
+                            <template id="main-todo-table-tbody__tmpl">
+                                <tr class="main-todo-table-tbody__tr">
+                                    <td class="main-todo-table-tbody__td">
+                                    </td>
+                                    <td class="main-todo-table-tbody__td-button">
+                                        <button class="main-todo-table-tbody__del-button" onclick="deleteTr(this)">
+                                            <img class="main-todo-table-tbody__del-button-img" src="Resources/TrashIcon.png"/>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
                 </table>
             </article>
         </main>

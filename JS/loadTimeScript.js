@@ -15,7 +15,6 @@
         timeBlock.appendChild(deleteBtn);
 
         var printBlock = document.getElementsByClassName("header");
-        console.log(printBlock[0]);
         printBlock[0].appendChild(timeBlock);
         
 
