@@ -29,7 +29,13 @@
         <main class="main block" >
             <article class ="main-todo block">
                 <h3 class="main-h">Todo list:</h3>
-                <div class="preloader">
+                <div class="main-insert_menu">
+                    <form  name="search" onsubmit="loadById();return false;">
+                        <input class="main-todo__add_button" type="text" minlength=1 maxlength=50 name="key" placeholder="Введите UserId"></input>
+                        <input type="button" value="loadAll" onclick="loadAll();"/>
+                    </form>
+                </div>
+                <div class="preloader hide">
                     <img src="Resources/preloader.gif">
                 </div>
                 <table class="main-todo-table hide">
